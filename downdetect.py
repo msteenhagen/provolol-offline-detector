@@ -6,6 +6,7 @@ import os
 from datetime import datetime
 
 url = "https://provo.lol"
+interface = "en0"
 log_filename = 'online-offline.log'
 
 def write_to_log(status_code, time, message):
