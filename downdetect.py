@@ -22,7 +22,7 @@ def restart_wifi(intf):
 	os.system("ifconfig en0 up") # Make sure interface is correct
 
 def online_detected(status_code, time, message):
-	print ("Server online. Response code:", status_code, "Time:", str(now.strftime("%d/%m/%Y %H:%M:%S")))
+	print (message, " Response code:", status_code, "Time:", str(time.strftime("%d/%m/%Y %H:%M:%S")))
 
 def offline_detected(status_code, time, message):
 	write_to_log(status_code, time, message)
