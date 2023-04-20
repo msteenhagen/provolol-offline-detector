@@ -33,7 +33,7 @@ while True:
 		response = requests.head(url)
 		now = datetime.now()	
 		if response.status_code == 200:
-			offline_detected(response.status_code, now, "All OK")
+			online_detected(response.status_code, now, "All OK")
 		else:
 			offline_detected(response.status_code, now, "Remote server error")
 	except requests.exceptions.ConnectionError:
